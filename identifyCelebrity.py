@@ -7,6 +7,7 @@ import celebrityList
 from detectFaces import FaceDetection
 import re
 import pandas as pd
+import argparse
 
 
 class Celebrity:
@@ -118,5 +119,10 @@ class Celebrity:
             raise
 
 
-obj = Celebrity()
-obj.startProcess("images")
+if __name__ == '__main__':
+    my_parser = argparse.ArgumentParser()
+    my_parser.add_argument('--images_folder ', action='store', type=str, required=True)
+    args = my_parser.parse_args()
+    images_folder = args.images_folder
+    obj = Celebrity()
+    obj.startProcess(images_folder)
