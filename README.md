@@ -16,7 +16,7 @@ The faces are detected using [retinaface](https://github.com/serengil/retinaface
 The output of the retinaface has been saved in following format
 ![img.png](img.png)
 
-* FA1, FA2, FA3 and FA4 are the coordinates of the bounding boxes of the detected faces
+* X1, X2, X3 and X4 are the coordinates of the bounding boxes of the detected faces
 * FrameFileName : Input image
 * PaddedFacesPath : Extracted faces with some padding
 

@@ -23,7 +23,7 @@ class FaceDetection:
             os.makedirs(savePaddedFaces)
 
         df = pd.DataFrame(
-            columns=["FrameFileName", "PaddedFacesPath", "FA1", "FA2", "FA3", "FA4"])
+            columns=["FramePath", "PaddedFacesPath", "X1", "X2", "X3", "X4"])
 
         def get_faces(image_path):
             return detect_faces(image_path)
@@ -89,8 +89,7 @@ class FaceDetection:
                         df_length1 = len(df)
                         df.loc[df_length1] = tmp
             except Exception as e:
-                # res[image_path] = []
-                print('Error in cropping face :', e)
+                print('Error in cropping:', e)
                 pass
 
         return df

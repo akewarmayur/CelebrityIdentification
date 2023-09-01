@@ -1,4 +1,4 @@
-,FrameFileName,PaddedFacesPath,FA1,FA2,FA3,FA4
+,FramePath,PaddedFacesPath,X1,X2,X3,X4
 0,images\7e791da660ab1d2c7b2f5c4039d4d54c.jpg,Faces/7e791da660ab1d2c7b2f5c4039d4d54c_0.png,128,258,417,43
 1,images\BilingualCelebritites_HUB.webp,Faces/BilingualCelebritites_HUB_0.png,53,873,389,614
 2,images\F_166.jpg,Faces/F_166_0.png,94,575,255,460

@@ -78,7 +78,7 @@ class Celebrity:
         list_of_prompts.append("a photo of ")
         faces_path = []
         detected_celebrities = []
-        results = pd.DataFrame(columns=["FrameFileName", "FacePath", "CelebrityName"])
+        results = pd.DataFrame(columns=["FramePath", "FacePath", "CelebrityName"])
         try:
             list_of_images = []
             isFolder = True
@@ -103,7 +103,7 @@ class Celebrity:
                 if s1 > 70:
                     detected_celebrity = c1.split("a photo of ")[1]
                     df_length1 = len(results)
-                    results.loc[df_length1] = [row['FrameFileName'], face_path, detected_celebrity]
+                    results.loc[df_length1] = [row['FramePath'], face_path, detected_celebrity]
                     if len(face_path) < 100:
                         faces_path.append(face_path)
                         detected_celebrities.append(detected_celebrity)
